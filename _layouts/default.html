@@ -46,6 +46,14 @@
         <span class="blc"></span><span class="trc"></span>
         </div>
         <article class="markdown-body">
+          {% if page.show_title %}
+          <h1 class="post-title">{{ page.title }}</h1>
+          {% endif %}
+          {% if page.date %}
+            <p class="post-date">
+              {{ page.date | date: "%-d %B %Y" }}
+            </p>
+          {% endif %}
           {{ content }}
         </article>
       </div>
@@ -53,7 +61,9 @@
     <footer>
       <div class="owner">
       {% if site.github.is_project_page %}
+      {% comment %}
       <p><a href="{{ site.github.owner_url }}" class="avatar"><img src="{{ site.github.owner_gravatar_url }}" width="48" height="48"></a> <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> maintains <a href="{{ site.github.repository_url }}">{{ site.title | default: site.github.repository_name }}</a></p>
+      {% endcomment %}
       {% endif %}
 
        {% if site.github.is_user_page %}

@@ -37,3 +37,33 @@
   max-width: none !important;
   width: 100% !important;
 }
+
+.post-title,
+.post-date {
+  text-align: center;
+}
+
+.markdown-body h1.post-title {
+  margin: 0 auto 0.15em;
+}
+
+.markdown-body p.post-date {
+  margin: 0 auto 2em;
+  font-size: 0.9em;
+}
+
+.markdown-body {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+body {
+  font-family: "Century Schoolbook", Georgia, serif;
+}
+
+@media screen and (max-width: 600px) {
+  .markdown-body {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+}
