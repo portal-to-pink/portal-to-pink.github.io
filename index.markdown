@@ -7,6 +7,6 @@ title: Home
 permalink: /
 ---
 
-Welcome! This website will feature a variety of topics with little to no correlation between them. An archive for anything I find interesting :)
+Welcome! This website will feature a variety of topics with little to no correlation between them. An archive of anything I find interesting :)
 
 
